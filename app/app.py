@@ -4,7 +4,6 @@ from social_media_agent import content_writer_agent, get_transcript, Runner, Ite
 import json
 
 
-# Set page configuration
 st.set_page_config(
     page_title="Social Media Content Generator",
     page_icon="📱",
@@ -113,6 +112,5 @@ if st.button("Generate Content", type="primary", disabled=not video_id):
                                 mime="text/plain"
                             )
 
-# Footer
 st.markdown("---")
 st.caption("Powered by OpenAI GPT-4o and YouTube Transcript API")
